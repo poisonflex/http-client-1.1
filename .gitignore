@@ -1,55 +1,33 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
+# Build artifacts
 *.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+*.o
+*.obj
+*.dll
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Runtime output
+decoded_body.html
+*.html
+!README.md
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Runtime state
+cookies.bin
+debug_request.txt
+*.bin
 
-# debug information files
-*.dwo
+# Personal version archive — never commit
+[0-9]*_*.c
+[0-9]*_*.h
+
+# Local experiment folders — never commit
+worked/
+dll/
+ssl/
+tls/
+*.poison
+
+# Editor / OS
+*.swp
+*~
+.DS_Store
+Thumbs.db
+.vscode/
